@@ -2,6 +2,7 @@ package org.example;
 
 public class Animal {
     String name;
+    String voice;
     int go;
     int plivet;
     public Animal (){  }

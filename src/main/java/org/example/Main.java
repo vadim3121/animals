@@ -2,22 +2,24 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
         dog dog1 = new dog("дружок");
         homecat homecat1 = new homecat("пирожок");
-        tiger tiger1 = new tiger("шлепа");
-        dog1.run(200);
-        homecat1.swim(200);
-        tiger1.swim(500);
+        tiger tiger1 = new tiger("Амур");
+        Puma Puma1 = new Puma("Адидас");
+        Caracal fatcat1 = new Caracal("Шлепа");
+
         dog1.animalInfo();
-        Animal[] lodka= {dog1, homecat1, tiger1};
-        for (int i = 0; i<3; i++)
+        Animal[] lodka= {dog1, homecat1, tiger1, Puma1, fatcat1};
+        for (int i = 0; i< lodka.length; i++)
         {
             lodka[i].run(200);
         }
-        for (int i = 0; i<3; i++)
+        for (int i = 0; i<lodka.length; i++)
         {
             lodka[i].swim(200);
         }
+        homecat1.voice();
+
     }
 }
